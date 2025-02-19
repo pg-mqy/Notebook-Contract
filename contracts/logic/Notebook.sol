@@ -31,6 +31,16 @@ contract Notebook {
         owner = msg.sender;
     }
 
+    // 名称
+    function name() public pure returns (string memory)  {
+        return "PG Notebook";
+    }
+
+    // 描述
+    function description() public pure returns (string memory)  {
+        return "This is a decentralized notepad";
+    }
+
     // 添加笔记函数
     function addNote(string memory content) public {
 
